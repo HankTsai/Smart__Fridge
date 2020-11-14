@@ -1,0 +1,11 @@
+最原始未清洗資料: original_total_recipe.json
+食材名稱清洗後: total_recipe_0924_ingredient_cleaned.json
+食譜名稱清洗後: recipe0925_V1.json
+Tags清洗後: recipe0925_V2.json
+清除食材為空的:recipe0928_V3.json
+清除食材名稱重複:recipe0928_V4.json
+清除食譜名稱重複:recipe0928_V5.json
+把_id設為index,like值清理,quantity清洗:recipe1014_V6.json
+新增食譜分群:recipe1017_V7.json
+修改食譜食材用量用詞統一:recipe1018_V8.json
+修正like值異常以及time用詞統一及部分食材分類錯誤及食材空值之食譜清除:recipe1023_V9.json
