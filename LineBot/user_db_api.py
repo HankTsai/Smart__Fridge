@@ -24,8 +24,8 @@ recipe hash -> keys -> values --> hmset(name,key,value) ---> ***hmset(_id,{recip
 
 # 統一窗口
 class DataBaseConnector(object):
-    def __init__(self, ip="192.168.1.176"):
-        self.redis = redis.StrictRedis(host=ip, port=6379, decode_responses=True)
+    def __init__(self, ip=<hostIP>):
+        self.redis = redis.StrictRedis(host=ip, port=<port>, decode_responses=True)
         self.mysql = self.connect_to_mysql('recipe')
         self.cursor = self.mysql.cursor()
         self.refrigerator = {}
@@ -36,10 +36,10 @@ class DataBaseConnector(object):
 
     @staticmethod
     def connect_to_mysql(db_name):
-        host = '192.168.1.52'
-        port = 3306
-        user = 'recipe'
-        passwd = 'recipe'
+        host = <hostIP>
+        port = <Port>
+        user = <user>
+        passwd = <passwd>
         db = db_name
         charset = 'utf8mb4'
         conn = pymysql.connect(host=host, port=port, user=user, passwd=passwd, db=db, charset=charset)
